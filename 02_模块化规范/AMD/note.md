@@ -41,3 +41,13 @@ define(['module1','module2'],function(m1,m2){
 ```  
 ## html 引入
 `<script data-main="js/main.js" src="js/libs/require.js"></script>`
+## 引入第三方的库
+```
+        // 需要对单独angular进行配置
+        // shim 单独的配置
+        shim: {
+            angular: {
+                exports: 'angular'
+            }
+        }
+```
