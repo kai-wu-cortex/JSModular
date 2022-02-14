@@ -9,6 +9,7 @@
 ```
 // 定义没有依赖的模块
 define(function(){
+    //暴露模块使用return
     return 模块
 })
 ```  
