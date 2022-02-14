@@ -26,3 +26,18 @@ define(['module1','module2'],function(m1,m2){
 1. require(['module1','module2'],function(m1,m2){})) 
 # 实现（浏览器端）
 * require.js
+## 配置
+```
+    // requirejs配置
+    requirejs.config({
+        paths: {
+        //define([name],function(name_v))
+            dataService: './modules/dataService',
+            //name              name_v
+            alerter: './modules/alerter'
+        }
+    })
+
+```  
+## html 引入
+`<script data-main="js/main.js" src="js/libs/require.js"></script>`
